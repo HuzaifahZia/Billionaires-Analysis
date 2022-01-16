@@ -56,7 +56,7 @@ hist(df$NetWorth,
      col="green")
 
 ggplot(df, aes(df$Name,df$NetWorth, fill=group))
-df
+
 ggplot(df, aes(NetWorth, group = Name, 
                      fill = as.factor(NetWorth), color = as.factor(NetWorth))) +
   scale_y_continuous(labels = scales::comma)
